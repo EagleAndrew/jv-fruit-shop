@@ -1,10 +1,10 @@
-package strategy.operations;
+package core.basesyntax.strategy.operations;
 
-import model.Fruit;
-import model.Transaction;
-import storage.Storage;
+import core.basesyntax.model.Fruit;
+import core.basesyntax.model.Transaction;
+import core.basesyntax.storage.*;
 
-public class SupplyOperationHandler implements OperationHandler {
+public class ReturnOperationHandler implements OperationHandler {
     @Override
     public void apply(Transaction transaction) {
         Fruit fruit = transaction.getFruit();

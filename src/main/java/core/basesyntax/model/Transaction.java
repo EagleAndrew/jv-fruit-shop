@@ -1,9 +1,9 @@
-package model;
+package core.basesyntax.model;
 
 public class Transaction {
-    Operation operation;
-    Fruit fruit;
-    Integer sum;
+    private Operation operation;
+    private Fruit fruit;
+    private Integer sum;
 
     public Operation getOperation() {
         return operation;
@@ -31,11 +31,9 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "operation='" + operation + '\'' +
-                ", fruit=" + fruit +
-                ", quanity=" + sum +
-                '}';
+        return "Transaction{"
+                + "operation='" + operation + '\''
+                + ", fruit=" + fruit + ", quanity=" + sum + '}';
     }
 
     public enum Operation {
@@ -49,9 +47,9 @@ public class Transaction {
         Operation(String operation) {
             this.operation = operation;
         }
+
         public String getOperation() {
             return operation;
         }
-
     }
 }

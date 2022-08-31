@@ -1,9 +1,8 @@
-package service.impl;
+package core.basesyntax.service.impl;
 
-import service.ReportService;
-import model.Fruit;
-import storage.Storage;
-
+import core.basesyntax.model.Fruit;
+import core.basesyntax.service.*;
+import core.basesyntax.storage.*;
 import java.util.Map;
 
 public class ReportServiceImpl implements ReportService {
